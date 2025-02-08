@@ -1,0 +1,209 @@
+/* General Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Header Styling */
+.App-header {
+  background-color: #004d99;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.05rem;
+}
+
+/* Updated Navigation to display buttons vertically */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column; /* Stack the buttons vertically */
+  gap: 20px;
+  padding: 0;
+  margin: 20px 0;
+}
+
+nav ul li {
+  display: block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #0066cc;
+  transition: background-color 0.3s ease;
+  display: block;
+  text-align: center;
+  width: 200px; /* Adjust width to align buttons vertically */
+}
+
+nav ul li a:hover {
+  background-color: #00509e;
+}
+
+/* Main Content Styling */
+main {
+  padding: 40px 20px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #004d99;
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background: linear-gradient(45deg, #0066ff, #00ccff);
+  border: none;
+  padding: 15px 30px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background-color: #004d99;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Makes it responsive */
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+  background-color: #007bff;
+}
+
+nav ul li {
+  padding: 10px;
+  background-color: #0056b3;
+  text-align: center;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #004080;
+}
+
+main {
+  padding: 20px;
+}
+
+
+.App header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #222;
+  padding: 15px;
+  color: white;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #1e90ff;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.sidebar li:hover {
+  background-color: #4682b4;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
