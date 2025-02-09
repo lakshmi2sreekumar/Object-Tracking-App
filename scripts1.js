@@ -1,4 +1,3 @@
-
 import { createClient } from 'https://esm.sh/@supabase/supabase-js';
 
 const supabaseUrl = 'https://ivlkyphxpfubhkfqoqgu.supabase.co';  // Replace with your Supabase URL
@@ -61,7 +60,7 @@ document.getElementById('login-form-element').addEventListener('submit', async (
         localStorage.setItem('user', JSON.stringify(user));
   
         // Redirect to a specific page, like a dashboard
-        window.location.href = 'index1.html'; // Replace with your target page
+        window.location.href = 'upload1.html'; // Replace with your target page
       }
     } catch (error) {
       console.error('Error during login: ', error);

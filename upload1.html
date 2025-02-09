@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome & Video Upload</title>
+  <link rel="stylesheet" href="upload_style.css">
+  <style>
+    /* Additional styles for the detected image */
+    #result img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    #result p {
+      font-size: 1.1em;
+      margin: 10px 0;
+    }
+    .file-label {
+      display: inline-block;
+      padding: 8px 12px;
+      background-color: #007bff;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .file-label:hover {
+      background-color: #0056b3;
+    }
+    #video-upload {
+      display: none;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="welcome-container">
+    <h1 class="welcome-text">Welcome to Our Website</h1>
+  </div>
+
+  <div class="upload-container">
+    <h2>Upload a Video</h2>
+
+    <!-- Updated Form -->
+    <form id="uploadForm" enctype="multipart/form-data">
+      <label for="object-name">Enter the object to detect:</label>
+      <input type="text" id="object-name" name="object_name" placeholder="e.g., Glasses, Remote, Keys" required>
+
+      <div class="file-input-container">
+        <input type="file" id="video-upload" name="video" accept="video/*" required>
+        <label for="video-upload" class="file-label">Choose File</label>
+      </div>
+
+      <button type="submit">Upload</button>
+    </form>
+
+    <!-- Result Display -->
+    <p id="status"></p>
+    <div id="result"></div> 
+    <p>Detection result will appear here.</p>
+      <!-- Placeholder for the detected image -->
+      <img id="detected-image" src="" alt="Detected Object" style="display: none;">
+    </div> 
+  </div>
+
+  <script src="upload_script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('images/bg.jpg'); /* Set background image */
+    background-size: cover;  /* Ensure the image covers the entire screen */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Fix the background image while scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white; /* Optional: Make text color white for better contrast */
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Welcome Animation */
+.welcome-container {
+    margin-top: 50px;
+}
+
+.welcome-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #030303;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Upload Container */
+.upload-container {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    margin: 30px auto;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 8px;
+}
+
+input[type="text"], input[type="file"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+
+}
+
+
+
+/* Custom File Input */
+.file-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.file-input-container input {
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.file-label {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #87ca8d;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.file-label:hover {
+    background-color: #70b963;
+}
+
+.file-label:active {
+    background-color: #68ba69;
+}
+
+/* Upload Button */
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #309d4a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button:active {
+    background-color: #1e7e34;
+}
